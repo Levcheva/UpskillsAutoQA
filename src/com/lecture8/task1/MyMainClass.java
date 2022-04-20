@@ -1,4 +1,4 @@
-package com.lecture8;
+package com.lecture8.task1;
 
 public class MyMainClass {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.lectureseven;
+package com.lecture7;
 
 public class Car {
     String carName;
