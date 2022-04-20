@@ -1,14 +1,15 @@
-package com.lecture8;
+package com.lecture8.task1;
 
-public class Circle extends Shape{
+
+public class Circle extends Shape {
 
     @Override
-    Double getArea(double d) {
-        return Math.PI * Math.pow(d, 2);
+    Double getArea(double radius) {
+        return Math.PI * Math.pow(radius, 2);
     }
 
     @Override
-    Double getPerimeter(double d) {
-        return (2 * Math.PI * d);
+    Double getPerimeter(double radius) {
+        return (2 * Math.PI * radius);
     }
 }

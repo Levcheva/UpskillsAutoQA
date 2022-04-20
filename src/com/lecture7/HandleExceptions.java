@@ -1,6 +1,4 @@
-package com.lectureseven;
-
-import java.security.spec.ECField;
+package com.lecture7;
 
 public class HandleExceptions {
 

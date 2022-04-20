@@ -1,6 +1,7 @@
-package com.lecture8;
+package com.lecture8.task1;
 
-public class Square extends Shape{
+
+public class Square extends Shape {
     @Override
     Double getArea(double d) {
         return d * d;
