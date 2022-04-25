@@ -1,7 +1,5 @@
 package com.lecture6.methods;
 
-import java.util.Scanner;
-
 public class L6Task1 {
     public static void main(String[] args) {
         double x = 4;
