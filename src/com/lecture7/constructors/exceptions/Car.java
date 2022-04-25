@@ -1,4 +1,4 @@
-package com.lecture7;
+package com.lecture7.constructors.exceptions;
 
 public class Car {
     String carName;

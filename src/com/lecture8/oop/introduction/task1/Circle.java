@@ -1,4 +1,4 @@
-package com.lecture8.task1;
+package com.lecture8.oop.introduction.task1;
 
 
 public class Circle extends Shape {

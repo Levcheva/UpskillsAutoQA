@@ -1,4 +1,4 @@
-package com.lecture8.task2;
+package com.lecture8.oop.introduction.task2;
 
 public class Employee {
     private final int id = 5;
