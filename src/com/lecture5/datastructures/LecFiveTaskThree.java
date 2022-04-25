@@ -7,7 +7,7 @@ public class LecFiveTaskThree {
         int rows;
         int columns;
 
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of rows: ");
 //taking row as input
         rows = sc.nextInt();
@@ -25,8 +25,7 @@ public class LecFiveTaskThree {
                 array[i][j] = sc.nextInt();
 //accessing array elements
         System.out.println("Elements of the array are: ");
-        for (int i = 0; i < rows; i++)
-        {
+        for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++)
 //prints the array elements
                 System.out.print(array[i][j] + " ");
@@ -34,4 +33,5 @@ public class LecFiveTaskThree {
             System.out.println();
         }
     }
+
 }
