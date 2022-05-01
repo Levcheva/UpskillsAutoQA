@@ -18,7 +18,6 @@ public class DayOfTheWeek {
             case 1:
                 dayOfTheWeekEnding = "st";
                 dayOfTheWeek = "Monday";
-
                 break;
             case 2:
                 dayOfTheWeekEnding = "nd";

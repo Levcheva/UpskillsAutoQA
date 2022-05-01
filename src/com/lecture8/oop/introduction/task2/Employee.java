@@ -1,14 +1,16 @@
 package com.lecture8.oop.introduction.task2;
 
 public class Employee {
-    private final int id = 5;
-    private final String firstName = "John";
-    private final String lastName = "Smith";
-
+    private  int id = 5;
+    private  String firstName = "John";
+    private  String lastName = "Smith";
     private double salary = 3000;
 
-    public double getSalary() {
-        return salary;
+    public Employee(int id, String firstName, String lastName, double salary) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.salary = salary;
     }
 
     public void setSalary(double salary) {
@@ -16,7 +18,6 @@ public class Employee {
     }
 
     String getName() {
-//        return this.firstName + this.lastName;
         return firstName + " " + lastName;
     }
 
@@ -37,7 +38,7 @@ public class Employee {
     }
 
     public static void main(String[] args) {
-        Employee myEmployee = new Employee();
+        Employee myEmployee = new Employee(11, "Kam", "Bam", 5000);
         System.out.println(myEmployee.getName());
         System.out.println(myEmployee);
     }
