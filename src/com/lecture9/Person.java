@@ -65,7 +65,7 @@ public class Person {
         String yearOfBirth = EGN.substring(0, 2);
         String monthOfBirth = EGN.substring(2, 4);
         String dayOfBirth = EGN.substring(4, 6);
-        String dateOfBirth = yearOfBirth + "." + monthOfBirth + "." + dayOfBirth;
+        String dateOfBirth =  dayOfBirth + "." + monthOfBirth  + yearOfBirth;
 
         return dateOfBirth;
     }
@@ -74,6 +74,11 @@ public class Person {
         System.out.println("Greetings on your own language!");
     }
 
+    /**
+     * This method is checking if the person is Celebrating Easter according to their religion
+     *
+     * @param religion
+     */
     public void isCelebratingEaster(String religion) {
         switch (religion) {
             case "Catholic":
@@ -91,10 +96,29 @@ public class Person {
         }
     }
 
+    /**
+     * This method is checking whether the person is adult according ot their age
+     * @param age
+     * @return
+     * True if the person is an adult and false if the person is a child.
+     */
     public boolean isAdult(int age) {
-        return false;
+            boolean isAdult = false;
+            if (age >= 18) {
+                isAdult = true;
+                System.out.println("This person is an Adult!");
+            } else {
+                System.out.println("This person is a Child!");
+            }
+            return isAdult;
     }
 
+    /**
+     * This method is checking whether the person is eligible to take a loan based on their job.
+     * @param job
+     * @return
+     * True if the person is eligible to take a loan and false if the person is not eligible to take a loan.
+     */
     public boolean canTakeLoan(String job) {
         if (job.equals("QA")) {
             System.out.println("The Person is eligible to take a loan!");
@@ -108,7 +132,6 @@ public class Person {
         Person person1 = new Bulgarian("Martina", "Alien", "Orthodox", "Bulgarian", "Bulgaria", 28, "Bulgaria", "Business Analyst");
 
         person1.sayHello();
-        person1.getSex();
         person1.isAdult(person1.age);
         person1.isCelebratingEaster(person1.religion);
         person1.canTakeLoan(person1.job);
